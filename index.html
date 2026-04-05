@@ -1,12 +1,201 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>我的 GitHub Pages 网页</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yijun Li | Personal Website</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      background: #1f2937;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #d1d5db;
+    }
+
+    nav {
+      background: #111827;
+      text-align: center;
+      padding: 12px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 18px;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .section {
+      background: white;
+      margin-bottom: 24px;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    }
+
+    .section h2 {
+      margin-bottom: 16px;
+      color: #111827;
+      border-left: 5px solid #2563eb;
+      padding-left: 12px;
+    }
+
+    .project {
+      margin-bottom: 18px;
+    }
+
+    .project h3 {
+      margin-bottom: 6px;
+      color: #1d4ed8;
+    }
+
+    .project p {
+      color: #555;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 18px;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+
+    .btn:hover {
+      background: #1d4ed8;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.1rem;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 8px 10px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>你好，GitHub Pages！</h1>
-  <p>这是我的第一个 github.io 网页。</p>
+  <header>
+    <h1>Yijun Li</h1>
+    <p>Embedded Software Engineer | RTEMS | Graphics Library Porting</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <section class="section" id="about">
+      <h2>About Me</h2>
+      <p>
+        Hello! I am Yijun Li, an embedded software engineer with strong interest in
+        real-time operating systems, compiler toolchains, graphics systems, and system-level development.
+        My recent work focuses on RTEMS, graphics library porting, and embedded platform integration.
+      </p>
+    </section>
+
+    <section class="section" id="projects">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>Porting OpenGL-related Libraries to RTEMS</h3>
+        <p>
+          Ported lightweight graphics libraries such as PortableGL and TinyGL to RTEMS,
+          replacing SDL/GLX-based backends with framebuffer-based output and RTEMS POSIX interfaces.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Wayland / Graphics Stack Exploration on RTEMS</h3>
+        <p>
+          Studied framebuffer devices, rendering pipelines, and display output mechanisms
+          in RTEMS and QEMU-based environments.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Zstd Library Integration for RTEMS</h3>
+        <p>
+          Integrated the zstd compression/decompression library into RTEMS,
+          including static library packaging, test applications, and memory usage evaluation.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>C / C++</li>
+        <li>Embedded Linux and RTEMS</li>
+        <li>Cross-compilation toolchains</li>
+        <li>QEMU and low-level debugging</li>
+        <li>Graphics systems and framebuffer programming</li>
+        <li>Build systems and software integration</li>
+      </ul>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <p>Email: 13611550738@163.com</p>
+      <p>GitHub: <a href="https://github.com/li-yijun-lyj" target="_blank">github.com/li-yijun-lyj</a></p>
+      <a class="btn" href="https://github.com/li-yijun-lyj" target="_blank">Visit My GitHub</a>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2026 Yijun Li. All rights reserved.</p>
+  </footer>
 </body>
 </html>
